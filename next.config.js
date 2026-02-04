@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    transpilePackages: ['three', 'react-globe.gl', 'react-leaflet']
+};
 
 module.exports = nextConfig;
