@@ -43,7 +43,7 @@ export default function BottomNav() {
                 </div>
             )}
 
-            <nav className="fixed bottom-0 left-0 right-0 z-[9999] glass-panel rounded-none border-x-0 border-b-0 pb-safe">
+            <nav className="fixed bottom-6 left-4 right-4 z-[9999] glass-panel rounded-2xl border pb-1 shadow-2xl animate-slide-up">
                 <div className="mx-auto max-w-md flex justify-around items-center p-4">
                     {navItems.map((item) => {
                         const isActive = pathname.startsWith(item.href);
