@@ -60,7 +60,7 @@ export default function CreateEventModal({ onClose, onSubmit, location, onTypeCh
     return (
         <div className="fixed inset-0 z-[2000] flex items-end md:items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in">
             {/* Modal Content - Compacted */}
-            <div className="glass-panel w-full max-w-sm p-5 relative animate-slide-up md:animate-scale-in rounded-3xl border border-white/10 shadow-2xl bg-[#0a0a0c]/90">
+            <div className="glass-panel w-full max-w-sm p-5 relative animate-slide-up md:animate-scale-in rounded-3xl border border-white/10 shadow-2xl bg-[#0a0a0c]/90 max-h-[85vh] overflow-y-auto overflow-x-hidden scrollbar-none">
 
                 <button
                     onClick={onClose}
