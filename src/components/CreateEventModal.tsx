@@ -98,9 +98,9 @@ export default function CreateEventModal({ onClose, onSubmit, location, onTypeCh
                                     setFormData({ ...formData, type: type.id });
                                     onTypeChange?.(type.id);
                                 }}
-                                className={`flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg border text-xs transition-all ${formData.type === type.id
-                                    ? "bg-[var(--ghost-primary)] border-[var(--ghost-primary)] text-white"
-                                    : "bg-white/5 border-white/5 text-white/60 hover:bg-white/10"
+                                className={`flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg border text-xs transition-all duration-200 ${formData.type === type.id
+                                    ? "bg-[var(--ghost-primary)] border-white text-white shadow-[0_0_12px_rgba(124,58,237,0.6)] scale-105"
+                                    : "bg-white/5 border-white/5 text-white/60 hover:bg-white/10 hover:border-white/20"
                                     }`}
                             >
                                 <span>{type.icon}</span>
